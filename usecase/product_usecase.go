@@ -3,6 +3,7 @@ package usecase
 import (
 	"api-go/model"
 	"api-go/repository"
+	_ "github.com/lib/pq"
 )
 
 type ProductUseCase struct {
