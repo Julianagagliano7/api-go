@@ -5,7 +5,6 @@ import (
 	"api-go/db"
 	"api-go/repository"
 	"api-go/usecase"
-
 	"github.com/gin-gonic/gin"
 )
 
@@ -35,5 +34,7 @@ func main() {
 	})
 
 	server.GET("/products", ProductController.GetProducts)
+
+	server.POST("/product", ProductController.CreateProduct)
 	server.Run(":8000")
 }
